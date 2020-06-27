@@ -1,0 +1,92 @@
+:root {
+  --primary-color: #4737b3;
+  --secondary-color: #191e2d;
+  --background: #ffffff;
+  --secondary-background: #f5f5f5;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px; /* 62.5% | 1rem = 10px */
+}
+
+body {
+  background: var(--secondary-background);
+  font-size: 1.6rem; /* 16px */
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  background: var(--background);
+  padding: 4rem;
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 3rem 3rem 5rem rgba(0, 0, 0, 0.05);
+}
+
+.contact__user {
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
+}
+
+.user__img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  display: block;
+  margin-right: 2rem;
+}
+
+.user__name,
+.user__title {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.user__name {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.user__title {
+  opacity: 0.5;
+  font-size: 1.8rem;
+}
+
+.contact__actions {
+  display: flex;
+  align-items: center;
+}
+
+.actions__phone,
+.actions__video {
+  background: var(--secondary-background);
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.actions__phone {
+  margin-right: 1.2rem;
+}
